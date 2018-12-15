@@ -27,7 +27,7 @@ df = pd.read_csv('pre_CDA.txt', delimiter='\t', header = None)
 df = df.transpose()
 df.columns = df.iloc[0]
 df = df.reindex(df.index.drop(0)).reset_index(drop=True).set_index("IDENTIFIER")
-# each cloumn is a feature, each row is an instance
+# each column is a feature, each row is an instance
 # y is the class label
 X = df.values
 y = df.index 

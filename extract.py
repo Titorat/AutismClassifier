@@ -19,3 +19,4 @@ df.to_csv('dataset_full.txt', sep='\t')
 
 df.columns = df.columns.map(lambda x: 1 if x in cases else 0, samples)
 df.to_csv('pre_CDA.txt', sep='\t')
+
